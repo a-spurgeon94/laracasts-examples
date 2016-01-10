@@ -1,27 +1,28 @@
-## Laravel PHP Framework
+# Gettin' Jiggy With Adapters
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Published - Sep. 18th 2014
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Description - An adapter is one of the easier design patterns to learn. The reason why is because you use them in the real world all the time! In this lesson, let's review a handful of examples to figure out how it all works.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+https://laracasts.com/series/design-patterns-in-php/episodes/2
 
-## Official Documentation
+## app/Person.php
+A class that demonstrates reading
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## app/Book.php
+A book example class
 
-## Contributing
+## app/BookInterface.php
+An interface for books
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## app/Kindle.php
+An eReader example class
 
-## Security Vulnerabilities
+## app/eReaderAdapter.php
+An adapter that wraps/converts an eReaderInterface to a BookInterface
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## app/eReaderInterface.php
+An interface for eReaders
 
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## resources/views/welcome.blade.php
+Displays results from examples
